@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+    border-radius: 8px;
+    background-color: #1c2541;
+    padding: 30px;
+    gap: 50px;
+    color: white;
+    position: relative;
+}
+
+
+body {
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  
+}
+
+.team {
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.team h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+.score-display {
+  background-color: black;
+  color: #F94F6D;
+  font-size: 50px;
+  font-family: Cursed Timer ULiL;
+  padding: 30px;
+  width: 70px;
+  margin: 0 auto 10px;
+  border-radius: 4px;
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 2px #ff4f87, 0 0 4px #ff4f87;
+  }
+  50% {
+    box-shadow: 0 0 6px #ff4f87, 0 0 8px #ff4f87;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff4f87, 0 0 12px #ff4f87;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.buttons button {
+  background-color: #1c2541;
+  color: white;
+  border: 1px solid #4f5d75;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #3a4762;
+}
+
+
+.reset_score_div { 
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
